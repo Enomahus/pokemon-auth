@@ -1,0 +1,13 @@
+:host {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(216, 228, 212);
+  } 
+
+.title {
+  display: flex;
+  color: brown;
+  justify-content: center;
+}

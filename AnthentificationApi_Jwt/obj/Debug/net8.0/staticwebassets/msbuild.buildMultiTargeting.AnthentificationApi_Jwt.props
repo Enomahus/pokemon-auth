@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AnthentificationApi_Jwt.props" />
+</Project>

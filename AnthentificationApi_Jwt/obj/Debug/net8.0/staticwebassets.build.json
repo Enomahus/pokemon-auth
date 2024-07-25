@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2hV7tWNic8RrURMfPzkJqQGakxMKVlGocGG4gJOlu0Y=",
+  "Source": "AnthentificationApi_Jwt",
+  "BasePath": "_content/AnthentificationApi_Jwt",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
