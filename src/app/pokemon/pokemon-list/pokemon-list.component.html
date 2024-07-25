@@ -6,28 +6,27 @@
         <app-pokemon-search></app-pokemon-search>
     </div>
     <div class="row">
-        <form class="formdesign">
-            <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
-                <div (click)="goToPokemon(pokemon)" class="card horizontal" pkmnBorderCard>
-                    <div class="card-image">
-                        <img [src]="pokemon.picture"/>
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <p>{{ pokemon.name }}</p>
-                            <p>Point de vie: {{pokemon.hp}}</p>
-                            <p>Dégâts: {{pokemon.cp}}</p>
-                            <p><small>{{ pokemon.created | date:'dd/MM/yyyy' }}</small></p>
-                            <!-- Utilisation du Pipes directives -->
-                            <span *ngFor="let type of pokemon.types" 
-                                class="{{ type | pokemonTypeColor }}">
-                                {{ type}}
-                            </span>
-                        </div>
+        <div *ngFor="let pokemon of pokemonList" class="col m4 s6">
+            <div (click)="goToPokemon(pokemon)" class="card horizontal" pkmnBorderCard>
+                <div class="card-image">
+                    <img [src]="pokemon.picture"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>{{ pokemon.name }}</p>
+                        <p>Point de vie: {{pokemon.hp}}</p>
+                        <p>Dégâts: {{pokemon.cp}}</p>
+                        <p><small>{{ pokemon.created | date:'dd/MM/yyyy' }}</small></p>
+                        <!-- Utilisation du Pipes directives -->
+                        <span *ngFor="let type of pokemon.types" 
+                            class="{{ type | pokemonTypeColor }}">
+                            {{ type}}
+                        </span>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+        
     </div>
 </div>
 <a 

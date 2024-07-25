@@ -3,6 +3,7 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormControl, FormsModule, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-signup',
@@ -15,6 +16,7 @@ export class SignupComponent {
 
   authService  =  inject(AuthService);
   router  =  inject(Router);
+  SignupUserSub!: Subscription;
   
   public signupForm = new FormGroup({
     firstname: new FormControl('',[Validators.required]),
@@ -28,20 +30,21 @@ export class SignupComponent {
     if (this.signupForm.valid) {
       debugger;
       console.log(this.signupForm.value);
-      this.authService.register(this.signupForm.value)
-        // .subscribe({
-        //   next: (data: any) => {
-        //     debugger;
-        //     console.log(data);
-        //     this.router.navigate(['/login']);
-        //   },
-        //   error: (err) => console.log(err)
-        // });
-        .subscribe((data: any) => {
-          debugger;
-          console.log(data);
-          this.router.navigate(['/login']);
-        })
+      this.SignupUserSub = this.authService.register(this.signupForm.value)
+        .subscribe({
+           next: data => {
+             debugger;
+             console.log(data);
+             this.router.navigate(['/login']);
+          },
+          error: (err) => console.log(err)
+        });
+
+        // .subscribe((data: any) => {
+        //   debugger;
+        //   console.log(data);
+        //   this.router.navigate(['/login']);
+        // })
     }
   }
 }
