@@ -63,7 +63,33 @@
           <!-- Pokemon types -->
           <form class="form-group">
             <label for="types">Types</label>
-            <p *ngFor="let type of types">
+            <table>
+              <th></th>
+              <th></th>
+              <tbody *ngFor="let type of types">
+                <tr>
+                  <td>
+                    <input type="checkbox"
+                      class="filled-in"
+                      id="{{ type }}"
+                      [value]="type"
+                      [checked]="hasType(type)"
+                      [disabled]="!isTypesValid(type)"
+                      (change)="selectType($event, type)"/>
+                  </td>
+                  <td>
+                    <span [attr.for]="type">
+                      <div class="{{ type | pokemonTypeColor }}">
+                        {{ type }}
+                      </div>
+                    </span>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <!-- <p *ngFor="let type of types">
               <label>
                 <input type="checkbox"
                   class="filled-in"
@@ -78,7 +104,7 @@
                   </div>
                 </span>
               </label>
-            </p>
+            </p> -->
           </form>
     
           <!-- Submit button -->
