@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj": {}
+    "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj": {}
   },
   "projects": {
-    "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj": {
+    "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
+        "projectUniqueName": "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
         "projectName": "AnthentificationApi_Jwt",
-        "projectPath": "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
+        "projectPath": "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
         "packagesPath": "C:\\Users\\pcnguessan\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\obj\\",
+        "outputPath": "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

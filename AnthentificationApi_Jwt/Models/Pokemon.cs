@@ -1,4 +1,4 @@
-﻿
+
 namespace AnthentificationApi_Jwt.Models;
 
 public class Pokemon
@@ -11,7 +11,6 @@ public class Pokemon
     public required string Picture { get; set; }
     public DateTime Created { get; set; }
     public virtual ICollection<Types> Types { get; set; } = new List<Types>();
-    //public virtual ICollection<PokemonType> PokemonTypes { get; set; } = new List<PokemonType>();
     
          
 }

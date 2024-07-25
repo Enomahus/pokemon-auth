@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kK3yGYgD10k=",
+  "dgSpecHash": "rIhOiEwH1OY=",
   "success": true,
-  "projectFilePath": "D:\\WorkSpace\\Tutos\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
+  "projectFilePath": "D:\\WORKSPACES\\ANGULAR\\pokemon-auth\\AnthentificationApi_Jwt\\AnthentificationApi_Jwt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pcnguessan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\pcnguessan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
